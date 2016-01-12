@@ -1,0 +1,20 @@
+CREATE TABLE user_create (
+	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	name VARCHAR(255),
+	email VARCHAR(255) NOT NULL,
+	password VARCHAR(128),
+	created TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+	UNIQUE(email)
+);
+
+
+CREATE TABLE auto (
+id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+user_id INT NOT NULL,
+autonr INT,
+sisenemismass INT,
+lahkumismass INT
+);
+
+
+
